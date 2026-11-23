@@ -48,7 +48,7 @@ class Mi
 
     bool operator<(Mi y)
     {
-        if(strcmp(donGia < y.donGia))
+        if(donGia < y.donGia)
         {
             return true;
         } 
