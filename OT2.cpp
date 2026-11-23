@@ -6,19 +6,36 @@ class TG
     float a, b, c;
 
     public:
-    // phuong thuc khoi tao khong doi
-    TG()
+   
+    //phuong thuc toan tu chu vi TG
+    float operator+()
     {
-        a = 0;
-        b = 0;
-        c = 0;
+        return (a+b+c);
     }
 
-    // phuong thuc khoi tao co doi
-    TG(float x, float y, float z)
+    // phuogn thuc toan tu nhap
+
+    friend istream& operator>>(istream&x, TG&y)
     {
-        a = x;
-        b = y;
-        c = z;
+        cout<<"Nhap canh a: "; x>>y.a;
+        cout<<"Nhap canh b: "; x>>y.b;
+        cout<<"Nhap canh c: "; x>>y.c;
+        return x;
     }
+    // phuong thuc toan tu xuat
+
+    friend ostream& operator<<(ostream&x, TG y)
+    {
+        x<<"a= "<<y.a<<" b= "<<y.b<<" c= "<<y.c<<endl;
+        return x;
+    }
+
 };
+
+int main()
+{
+    TG P, Q;
+    cout<<"Nhap thong tin TG P: "; cin>>P;
+    cout<<"Nhap thong tin TG Q"
+
+}
