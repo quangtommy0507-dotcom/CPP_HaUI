@@ -33,7 +33,7 @@ class Vector3D
 
     Vector3D operator+(Vector3D b)
     {
-        Vector kq;
+        Vector3D kq;
         kq.x = x + b.x;
         kq.y = y + b.y;
         kq.z = z + b.z;
