@@ -17,7 +17,7 @@ class TG
 
     friend istream& operator>>(istream&x, TG&y)
     {
-        cout<<"Nhap canh a: "; x>>y.a;
+        cout<<"\nNhap canh a: "; x>>y.a;
         cout<<"Nhap canh b: "; x>>y.b;
         cout<<"Nhap canh c: "; x>>y.c;
         return x;
@@ -36,6 +36,10 @@ int main()
 {
     TG P, Q;
     cout<<"Nhap thong tin TG P: "; cin>>P;
-    cout<<"Nhap thong tin TG Q"
+    cout<<"Nhap thong tin TG Q: "; cin>>Q;
+    cout<<"Thong tin TG P: "<<P<<endl;
+    cout<<"Thong tin TG Q: "<<Q<<endl;
+    cout<<"Chu vi TG P: "<<(+P)<<endl;
+    cout<<"Chu vi TG Q: "<<(+Q)<<endl;
 
 }
