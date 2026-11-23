@@ -8,13 +8,6 @@ class Mi
         int SL;
         float donGia;
     public:
-    Mi(const char * ma, const char * B, int soluong, float gia)
-    {
-        strcpy(maMay, ma);
-        strcpy(HSX, B);
-        SL = soluong;
-        giaBan = gia;
-    }
     
     float thanhtien()
     {
@@ -48,7 +41,7 @@ class Mi
         return x;
     }
 
-    Mi operator+(Mi y)
+    float operator+(Mi y)
     {
         return thanhtien() + y.thanhtien();
     }
@@ -67,9 +60,9 @@ class Mi
 
 int main()
 {
-    Mi A, B("001", "Canon", 10, 500);
-    cout<<"Nhap thong tin May in A\n";
-    cin>>A;
+    Mi A, B;
+    cout<<"Nhap thong tin May in A va B\n";
+    cin>>A; cin>>B;
     cout<<"Thong tin may in A: "<<A<<endl;
     cout<<"Thong tin may in B: "<<B<<endl;
 
